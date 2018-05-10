@@ -51,19 +51,19 @@
     * (Can now choose compile->Compile all any time, and everything will go to the right place.
     * Make a testbench
         * the testbench will need to load the definitions from the libraries:
-            * -- ACC defs
-                    library&nbsp;workacc;
-                    use&nbsp;workacc.defs.all;
-                    --&nbsp;ACDC&nbsp;defs
-                    library&nbsp;workacdc;
-                    use&nbsp;workacdc.Definition_Pool.all;
+            * -- ACC defs<br>
+              library&nbsp;workacc;<br>
+              use&nbsp;workacc.defs.all;<br>
+              --&nbsp;ACDC&nbsp;defs<br>
+              library&nbsp;workacdc;<br>
+              use&nbsp;workacdc.Definition_Pool.all;
             * It also needs the component declaration at the start of the architecture (before begin, so that it can be compiled)
             * The instantiation should be of this form:
-                * acc_TRANSCEIVERS : transceivers
-                        port&nbsp;map(
-                        &nbsp;&nbsp;xCLR_ALL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=>&nbsp;reset_global,
-                        &nbsp;&nbsp;xALIGN_ACTIVE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=>&nbsp;xalign_strobe,
-                        &nbsp;&nbsp;xALIGN_SUCCESS&nbsp;&nbsp;&nbsp;&nbsp;=>&nbsp;xalign_good,
+                * acc_TRANSCEIVERS : transceivers<br>
+                  port&nbsp;map(<br>
+                  &nbsp;&nbsp;xCLR_ALL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=>&nbsp;reset_global,<br>
+                  &nbsp;&nbsp;xALIGN_ACTIVE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=>&nbsp;xalign_strobe,<br>
+                  &nbsp;&nbsp;xALIGN_SUCCESS&nbsp;&nbsp;&nbsp;&nbsp;=>&nbsp;xalign_good,
                     * (without entity or the name of the architecture)
         * If this doesn’t work, may need to link to the resource libraries created before (page 42)
             * modelsimTutorial.pdf
