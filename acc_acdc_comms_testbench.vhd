@@ -14,7 +14,7 @@ end entity testbench;
 
 architecture BENCH of testbench is
 
-  COMPONENT lvds_com is
+  COMPONENT lvds_com is -- ACDC
 	port(
 			xSTART		 		: in   	std_logic_vector(4 downto 0);
 			xDONE		 			: out   	std_logic_vector(4 downto 0);
@@ -43,6 +43,7 @@ architecture BENCH of testbench is
 			xCLK_40MHz			: in		std_logic;
 			 
 			xRX_LVDS_DATA	 	: in		std_logic;
+			xRX_LVDS_CLK	 	: in		std_logic;
 			xINSTRUCTION		: out		std_logic_vector(31 downto 0);
 			xINSTRUCT_READY	: out		std_logic;
 			xPSEC_MASK			: in 		std_logic_vector(4 downto 0);
@@ -58,6 +59,7 @@ architecture BENCH of testbench is
 			xPULL_RAM_DATA				: in  std_logic;
 			
 			xTX_LVDS_DATA		: out		std_logic_vector(1 downto 0);
+			xTX_LVDS_CLK		: out		std_logic;
 
 			xRADDR				: out  	std_logic_vector (RAM_ADR_SIZE-1 downto 0);
 			xRAM_READ_EN		: out		std_logic_vector(4 downto 0);
@@ -67,7 +69,7 @@ architecture BENCH of testbench is
 			
 end COMPONENT;
 
-COMPONENT transceivers is
+COMPONENT transceivers is -- ACC
 	port(
 		xCLR_ALL				: in	std_logic;	--global reset
 		xALIGN_ACTIVE		: in	std_logic;  --lvds alignment strobe
@@ -77,7 +79,9 @@ COMPONENT transceivers is
 		xRX_CLK				: in	std_logic;	--parallel data clock for rx transceiver 
 		
 		xRX_LVDS_DATA		: in	std_logic_vector(1 downto 0); --serdes data received (2x)
+		xRX_LVDS_CLK		: in	std_logic;  --bytealigned clk for serdes data received
 		xTX_LVDS_DATA		: out	std_logic;                    --serdes data transmitted
+		xTX_LVDS_CLK	 	: out		std_logic;                  --bytealigned clk for serdes data transmitted
 		
 		xCC_INSTRUCTION	: in	std_logic_vector(instruction_size-1 downto 0);	--front-end 
 		xCC_INSTRUCT_RDY	: in	std_logic;	--intruction ready to send to front-end
@@ -109,7 +113,9 @@ end COMPONENT;
   signal xalign_strobe, xalign_good : STD_LOGIC;
   signal clock_sys, clocks_rx       : STD_LOGIC;
   signal rx_serdes                  : STD_LOGIC_VECTOR(1 downto 0);
+  signal rx_serdes_clk              : STD_LOGIC;
   signal tx_serdes                  : STD_LOGIC;
+  signal tx_serdes_clk              : STD_LOGIC;
   signal xInstruction               : STD_LOGIC_VECTOR(31 downto 0);
   signal xInstruct_Rdy              : STD_LOGIC;
   signal xtrig                      : STD_LOGIC;
@@ -185,42 +191,6 @@ begin
   end process;
   
   
-  
-  
-acc_TRANSCEIVERS : transceivers
-port map(
-  xCLR_ALL          => reset_global,
-  xALIGN_ACTIVE     => xalign_strobe,
-  xALIGN_SUCCESS    => xalign_good,
-
-  xCLK              => clock_sys,
-  xRX_CLK           => clock_sys, --clocks_rx,
-
-  xRX_LVDS_DATA     => rx_serdes,
-  xTX_LVDS_DATA     => tx_serdes,
-
-  xCC_INSTRUCTION   => xInstruction,
-  xCC_INSTRUCT_RDY  => xInstruct_Rdy,
-  xTRIGGER          => xtrig,
-  xCC_SEND_TRIGGER  => trigger_to_fe,
-
-  xRAM_RD_EN        => '0',
-  xRAM_ADDRESS      => (others => '0'),
-  xRAM_CLK          => '0',
-  xRAM_FULL_FLAG    => open,
-  xRAM_DATA         => open,
-  xRAM_SELECT_WR    => (others => '0'),
-  xRAM_SELECT_RD    => (others => '0'),
-
-  xALIGN_INFO       => open,
-  xCATCH_PKT        => packet_from_fe_rec,
-
-  xDONE             => xdone,
-  xDC_MASK          => xfe_mask,
-  xPLL_LOCKED       => clock_FPGA_PLLlock,
-  xFE_ALIGN_SUCCESS => lvds_aligned_tx,
-  xSOFT_RESET       => xready);
-  
 acdc_lvds_com : lvds_com
   port map(
   xStart            => acdc_xstart,
@@ -247,6 +217,7 @@ acdc_lvds_com : lvds_com
   
   xCLK_40MHz        => clock_sys,
   xRX_LVDS_DATA     => tx_serdes, -- lvds_line
+  xRX_LVDS_CLK      => tx_serdes_clk,
   xINSTRUCTION      => acdc_instruction_out,
   xINSTRUCT_READY   => acdc_instruction_ready,
   xPSEC_MASK        => (others => '1'),  -- check this
@@ -258,11 +229,47 @@ acdc_lvds_com : lvds_com
   xSYSTEM_IS_CLEAR  => '0',
   xPULL_RAM_DATA    => '1',
   xTX_LVDS_DATA     => rx_serdes,
+  xTX_LVDS_CLK      => rx_serdes_clk,
   xRADDR            => open,
   xRAM_READ_EN      => open,
   xDC_XFER_DONE     => open,
   xTX_BUSY          => acdc_txbusy,
   xRX_BUSY          => acdc_rxbusy
   );
+
+	acc_TRANSCEIVERS : transceivers
+	port map(
+	  xCLR_ALL          => reset_global,
+	  xALIGN_ACTIVE     => xalign_strobe,
+	  xALIGN_SUCCESS    => xalign_good,
+
+	  xCLK              => clock_sys,
+	  xRX_CLK           => clock_sys, --clocks_rx,
+	  xRX_LVDS_DATA     => rx_serdes,
+		xRX_LVDS_CLK      => rx_serdes_clk,
+	  xTX_LVDS_DATA     => tx_serdes,
+		xTX_LVDS_CLK      => tx_serdes_clk,
+
+	  xCC_INSTRUCTION   => xInstruction,
+	  xCC_INSTRUCT_RDY  => xInstruct_Rdy,
+	  xTRIGGER          => xtrig,
+	  xCC_SEND_TRIGGER  => trigger_to_fe,
+
+	  xRAM_RD_EN        => '0',
+	  xRAM_ADDRESS      => (others => '0'),
+	  xRAM_CLK          => '0',
+	  xRAM_FULL_FLAG    => open,
+	  xRAM_DATA         => open,
+	  xRAM_SELECT_WR    => (others => '0'),
+	  xRAM_SELECT_RD    => (others => '0'),
+
+	  xALIGN_INFO       => open,
+	  xCATCH_PKT        => packet_from_fe_rec,
+
+	  xDONE             => xdone,
+	  xDC_MASK          => xfe_mask,
+	  xPLL_LOCKED       => clock_FPGA_PLLlock,
+	  xFE_ALIGN_SUCCESS => lvds_aligned_tx,
+	  xSOFT_RESET       => xready);
 
 end architecture BENCH;
