@@ -9,6 +9,12 @@ use workacc.defs.all;
 library workacdc;
 use workacdc.Definition_Pool.all;
 
+-- to simulate arriav_lcell_comb in the 8b10b libraries
+library arriav_ver;
+use arriav_ver.all;
+library arriav;
+use arriav.all;
+
 entity testbench is
 end entity testbench;
 
