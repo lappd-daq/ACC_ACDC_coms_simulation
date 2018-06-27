@@ -51,6 +51,7 @@ architecture BENCH of testbench is
 			xINSTRUCT_READY	: out		std_logic;
 			xPSEC_MASK			: in 		std_logic_vector(4 downto 0);
 			xFPGA_PLL_LOCK		: in		std_logic;
+			xEXTERNAL_DONE		:		in	std_logic;
 			
 			xREAD_ADC_DATA		: in		std_logic;
 			
@@ -189,6 +190,7 @@ acdc_lvds_com : lvds_com
   xStart            => acdc_xstart,
   xDONE             => open,
   xCLR_ALL          => reset_global,
+  xRX_LVDS_CLK      => tx_serdes_clk,
   xALIGN_SUCCESS    => lvds_aligned_tx, -- lvds_line
   
   xADC              => acdc_dummycda,
@@ -209,23 +211,23 @@ acdc_lvds_com : lvds_com
   
   xCLK_40MHz        => clock_sys,
   xRX_LVDS_DATA     => tx_serdes, -- lvds_line
-  xRX_LVDS_CLK      => tx_serdes_clk,
   xINSTRUCTION      => acdc_instruction_out,
   xINSTRUCT_READY   => acdc_instruction_ready,
   xPSEC_MASK        => (others => '1'),  -- check this
   xFPGA_PLL_LOCK    => '1',
+  xEXTERNAL_DONE => '1',
   xREAD_ADC_DATA    => '0',
   xREAD_TRIG_RATE_ONLY => '0',
   xSELF_TRIG_RATE_COUNT => acdc_dummyrca,
   xSYSTEM_IS_CLEAR  => '0',
   xPULL_RAM_DATA    => '1',
   xTX_LVDS_DATA     => rx_serdes,
-  xTX_LVDS_CLK      => rx_serdes_clk,
   xRADDR            => open,
   xRAM_READ_EN      => open,
   xDC_XFER_DONE     => open,
   xTX_BUSY          => acdc_txbusy,
-  xRX_BUSY          => acdc_rxbusy
+  xRX_BUSY          => acdc_rxbusy,
+  xTX_LVDS_CLK      => rx_serdes_clk
   );
 
 	acc_TRANSCEIVERS : transceivers
