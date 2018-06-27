@@ -11,9 +11,7 @@ use workacdc.Definition_Pool.all;
 
 -- to simulate arriav_lcell_comb in the 8b10b libraries
 library arriav_ver;
-use arriav_ver.all;
 library arriav;
-use arriav.all;
 
 entity testbench is
 end entity testbench;
@@ -25,7 +23,6 @@ architecture BENCH of testbench is
 			xSTART		 		: in   	std_logic_vector(4 downto 0);
 			xDONE		 			: out   	std_logic_vector(4 downto 0);
 			xCLR_ALL	 			: in   	std_logic;
-			xALIGN_ACTIVE		: in		std_logic;
 			xALIGN_SUCCESS		: out		std_logic;
 			 
 			xADC					: in   ChipData_array;
@@ -78,7 +75,6 @@ end COMPONENT;
 COMPONENT transceivers is -- ACC
 	port(
 		xCLR_ALL				: in	std_logic;	--global reset
-		xALIGN_ACTIVE		: in	std_logic;  --lvds alignment strobe
 		xALIGN_SUCCESS 	: out	std_logic;  --successfully aligned
 		
 		xCLK					: in	std_logic;	--system clock
@@ -116,7 +112,7 @@ end COMPONENT;
   signal Stop                       : BOOLEAN;
   -- ACC side
   signal reset_global               : STD_LOGIC;
-  signal xalign_strobe, xalign_good : STD_LOGIC;
+  signal xalign_good                : STD_LOGIC;
   signal clock_sys, clocks_rx       : STD_LOGIC;
   signal rx_serdes                  : STD_LOGIC_VECTOR(1 downto 0);
   signal rx_serdes_clk              : STD_LOGIC;
@@ -167,14 +163,6 @@ begin
     wait;
   end process;
   
-  alginstrobe_gen: process
-  begin
-    xalign_strobe <= '0';
-    wait for 100 NS;
-    xalign_strobe <= '1';
-    wait;
-  end process;
-  
   clocksys_gen: process -- 40mhz
   begin
     while not Stop loop
@@ -202,7 +190,6 @@ acdc_lvds_com : lvds_com
   xStart            => acdc_xstart,
   xDONE             => open,
   xCLR_ALL          => reset_global,
-  xALIGN_ACTIVE     => xalign_strobe, -- lvds_line
   xALIGN_SUCCESS    => lvds_aligned_tx, -- lvds_line
   
   xADC              => acdc_dummycda,
@@ -246,7 +233,6 @@ acdc_lvds_com : lvds_com
 	acc_TRANSCEIVERS : transceivers
 	port map(
 	  xCLR_ALL          => reset_global,
-	  xALIGN_ACTIVE     => xalign_strobe,
 	  xALIGN_SUCCESS    => xalign_good,
 
 	  xCLK              => clock_sys,
