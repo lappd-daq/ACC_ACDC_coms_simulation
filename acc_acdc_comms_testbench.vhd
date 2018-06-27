@@ -51,7 +51,6 @@ architecture BENCH of testbench is
 			xINSTRUCT_READY	: out		std_logic;
 			xPSEC_MASK			: in 		std_logic_vector(4 downto 0);
 			xFPGA_PLL_LOCK		: in		std_logic;
-			xEXTERNAL_DONE		: in		std_logic;
 			
 			xREAD_ADC_DATA		: in		std_logic;
 			
@@ -215,7 +214,6 @@ acdc_lvds_com : lvds_com
   xINSTRUCT_READY   => acdc_instruction_ready,
   xPSEC_MASK        => (others => '1'),  -- check this
   xFPGA_PLL_LOCK    => '1',
-  xEXTERNAL_DONE    => '1',
   xREAD_ADC_DATA    => '0',
   xREAD_TRIG_RATE_ONLY => '0',
   xSELF_TRIG_RATE_COUNT => acdc_dummyrca,
