@@ -87,7 +87,7 @@ R17
 R11
 R12
 vdecoder_8b10b
-Z18 !s110 1544044191
+Z18 !s110 1544326006
 !i10b 1
 !s100 Sk8G7W09a>5SGX:N7khYC0
 IJ5E]YVF_b]aj?Y=^BKGab3
@@ -101,7 +101,7 @@ Z21 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z22 !s108 1544044191.000000
+Z22 !s108 1544326006.000000
 !s107 E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/decoder_8b10b.v|
 !s90 -reportprogress|300|-work|workacdc|-stats=none|E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/decoder_8b10b.v|
 !i113 1
@@ -122,9 +122,9 @@ Vj9UM[P:6:bM2ng]:QlXHf3
 !s100 hA@_hJE0<93f_HoDO_JVZ3
 R6
 32
-!s110 1544123446
+Z27 !s110 1544326007
 !i10b 1
-!s108 1544123446.000000
+R22
 !s90 -reportprogress|300|-work|workacdc|-2002|-explicit|-stats=none|E:/psec4/acdc/firmware/ACDC-firmware/source/Definition_Pool.vhd|
 !s107 E:/psec4/acdc/firmware/ACDC-firmware/source/Definition_Pool.vhd|
 !i113 1
@@ -152,31 +152,31 @@ R22
 R23
 R24
 Elvds_com
-Z27 w1543937720
-Z28 DPx4 work 15 definition_pool 0 22 j9UM[P:6:bM2ng]:QlXHf3
+Z28 w1544329290
+Z29 DPx4 work 15 definition_pool 0 22 j9UM[P:6:bM2ng]:QlXHf3
 R26
 R25
 R1
 R2
 R3
-Z29 8E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_com.vhd
-Z30 FE:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_com.vhd
+Z30 8E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_com.vhd
+Z31 FE:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_com.vhd
 l0
 L18
 VE^O1o8cC7Q[YLS8RYVICf2
 !s100 X[`6fh1gI9eY0chjhT`kR2
 R6
 32
-Z31 !s110 1544044192
+Z32 !s110 1544329310
 !i10b 1
-R22
-Z32 !s90 -reportprogress|300|-work|workacdc|-2002|-explicit|-stats=none|E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_com.vhd|
-Z33 !s107 E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_com.vhd|
+Z33 !s108 1544329310.000000
+Z34 !s90 -reportprogress|300|-work|workacdc|-2002|-explicit|-stats=none|E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_com.vhd|
+Z35 !s107 E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_com.vhd|
 !i113 1
 R11
 R12
 Abehavioral
-R28
+R29
 R26
 R25
 R1
@@ -184,81 +184,81 @@ R2
 DEx4 work 8 lvds_com 0 22 E^O1o8cC7Q[YLS8RYVICf2
 l144
 L72
-V;FI?UH0m=E>`mJ3D7[O_31
-!s100 g^M:ch9dbD2mQ[@EZd54<1
+VS0<QIMQ`D6S9WH@B3EjbM1
+!s100 nFCXRFOH2H`F0F2_iLIh51
 R6
 32
-R31
-!i10b 1
-R22
 R32
+!i10b 1
 R33
+R34
+R35
 !i113 1
 R11
 R12
 Elvds_tranceivers
-Z34 w1544124671
+Z36 w1544333445
 R25
 R26
-R28
+R29
 R1
 R2
 R3
-Z35 8E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_tranceivers.vhd
-Z36 FE:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_tranceivers.vhd
+Z37 8E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_tranceivers.vhd
+Z38 FE:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_tranceivers.vhd
 l0
 L27
 V6VkaV@i8od0[KV:0D5X`Y0
 !s100 ;L:jLHRSo;a9Z`UZh2C4z3
 R6
 33
-Z37 !s110 1544124685
+Z39 !s110 1544333490
 !i10b 1
-Z38 !s108 1544124685.000000
-Z39 !s90 -reportprogress|300|-work|workacdc|-2008|-explicit|-stats=none|E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_tranceivers.vhd|
-Z40 !s107 E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_tranceivers.vhd|
+Z40 !s108 1544333490.000000
+Z41 !s90 -reportprogress|300|-work|workacdc|-2008|-explicit|-stats=none|E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_tranceivers.vhd|
+Z42 !s107 E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_tranceivers.vhd|
 !i113 1
-Z41 o-work workacdc -2008 -explicit
+Z43 o-work workacdc -2008 -explicit
 R12
 Abdf_type
 R25
 R26
-R28
+R29
 R1
 R2
-Z42 DEx4 work 16 lvds_tranceivers 0 22 6VkaV@i8od0[KV:0D5X`Y0
+Z44 DEx4 work 16 lvds_tranceivers 0 22 6VkaV@i8od0[KV:0D5X`Y0
 l177
 L46
-VG?en7mEF2`:9ik62DEBgG0
-!s100 ^m7]lJO;n;e6]CZNFM5cX1
+VaV7PQ8LhHkE8VzckB7ZLL0
+!s100 DA726W`B;[h?bmGL;P>7B3
 R6
 33
-R37
-!i10b 1
-R38
 R39
+!i10b 1
 R40
-!i113 1
 R41
+R42
+!i113 1
+R43
 R12
 Erx_fifo
-Z43 w1543608539
+Z45 w1543608539
 R1
 R2
 R3
-Z44 8E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/rx_fifo.vhd
-Z45 FE:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/rx_fifo.vhd
+Z46 8E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/rx_fifo.vhd
+Z47 FE:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/rx_fifo.vhd
 l0
 L42
 V0C_n>c4CK96_T`L9P`V0S3
 !s100 ?35@EnLd8ITfVMmzcbSij0
 R6
 32
-R31
+Z48 !s110 1544326009
 !i10b 1
-Z46 !s108 1544044192.000000
-Z47 !s90 -reportprogress|300|-work|workacdc|-2002|-explicit|-stats=none|E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/rx_fifo.vhd|
-Z48 !s107 E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/rx_fifo.vhd|
+Z49 !s108 1544326009.000000
+Z50 !s90 -reportprogress|300|-work|workacdc|-2002|-explicit|-stats=none|E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/rx_fifo.vhd|
+Z51 !s107 E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/rx_fifo.vhd|
 !i113 1
 R11
 R12
@@ -272,32 +272,32 @@ VAP4:@^O2@=bWk3L0ND;b:3
 !s100 kj5L3?e>BCWUVgTEZeO>n1
 R6
 32
-R31
-!i10b 1
-R46
-R47
 R48
+!i10b 1
+R49
+R50
+R51
 !i113 1
 R11
 R12
 Etx_fifo
-Z49 w1543604785
+Z52 w1543604785
 R1
 R2
 R3
-Z50 8E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/tx_fifo.vhd
-Z51 FE:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/tx_fifo.vhd
+Z53 8E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/tx_fifo.vhd
+Z54 FE:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/tx_fifo.vhd
 l0
 L42
 V9^^NUHO`KOPiG8Sa7TPH;0
 !s100 8Bmob>G50IXX>d^TId7OZ2
 R6
 32
-R31
+R48
 !i10b 1
-R46
-Z52 !s90 -reportprogress|300|-work|workacdc|-2002|-explicit|-stats=none|E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/tx_fifo.vhd|
-Z53 !s107 E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/tx_fifo.vhd|
+R49
+Z55 !s90 -reportprogress|300|-work|workacdc|-2002|-explicit|-stats=none|E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/tx_fifo.vhd|
+Z56 !s107 E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/tx_fifo.vhd|
 !i113 1
 R11
 R12
@@ -311,74 +311,74 @@ V88BMZ1^E;1@gQVidRMK7=3
 !s100 ED`h^;[7MkG65H_X_=dST0
 R6
 32
-R31
+R48
 !i10b 1
-R46
-R52
-R53
+R49
+R55
+R56
 !i113 1
 R11
 R12
 vuart
-Z54 !s110 1544116249
+R48
 !i10b 1
 !s100 <O[;FWM8iB03Y<aTJY8H30
 IXDUUZIe8HJ`m<BnRA=HlI1
 R19
 R3
-Z55 w1544115546
-Z56 8E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/uart.v
-Z57 FE:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/uart.v
+Z57 w1544115546
+Z58 8E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/uart.v
+Z59 FE:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/uart.v
 L0 192
 R21
 r1
 !s85 0
 31
-Z58 !s108 1544116249.000000
-Z59 !s107 E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/uart.v|
-Z60 !s90 -reportprogress|300|-work|workacdc|-stats=none|E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/uart.v|
+R49
+Z60 !s107 E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/uart.v|
+Z61 !s90 -reportprogress|300|-work|workacdc|-stats=none|E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/uart.v|
 !i113 1
 R23
 R24
 vuart_rx
-R54
+R48
 !i10b 1
 !s100 1nQokO7Q;1dPOnHn65fbn1
 I^?J7ICb>CNXCW1_PBeN0Y3
 R19
 R3
-R55
-R56
 R57
+R58
+R59
 L0 91
 R21
 r1
 !s85 0
 31
-R58
-R59
+R49
 R60
+R61
 !i113 1
 R23
 R24
 vuart_tx
-R54
+R48
 !i10b 1
 !s100 DYn3GncDTm:^mO<55EhcH1
 ICoCLlP3>PjFL@^ZAYOlSG1
 R19
 R3
-R55
-R56
 R57
+R58
+R59
 R20
 R21
 r1
 !s85 0
 31
-R58
-R59
+R49
 R60
+R61
 !i113 1
 R23
 R24

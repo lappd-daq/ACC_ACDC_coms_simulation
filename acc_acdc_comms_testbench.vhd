@@ -152,7 +152,7 @@ begin
   clock_FPGA_PLLlock <= '1';
   xready <= '1';
   
-  acdc_xstart <= (others => '1');
+  acdc_xstart <= (others => '0');
   
   reset_gen: process
   begin
