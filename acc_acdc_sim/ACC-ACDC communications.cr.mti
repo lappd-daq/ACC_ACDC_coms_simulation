@@ -13,6 +13,17 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	decoder_8b10b
 
+} {} {}} E:/acc/firmware/ACC-2xSPF/src/RxTx/lvds_transceivers.vhd {1 {vcom -work workacc -2008 -explicit -stats=none E:/acc/firmware/ACC-2xSPF/src/RxTx/lvds_transceivers.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package defs
+-- Compiling entity lvds_transceivers
+-- Compiling architecture bdf_type of lvds_transceivers
+
 } {} {}} E:/acc/firmware/ACC-2xSPF/src/RxTx/transceivers.vhd {1 {vcom -work workacc -2008 -explicit -stats=none E:/acc/firmware/ACC-2xSPF/src/RxTx/transceivers.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -73,20 +84,23 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	decoder_8b10b
 
+} {} {}} E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_com.vhd {1 {vcom -work workacdc -2002 -explicit -stats=none E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_com.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package Definition_Pool
+-- Compiling entity lvds_com
+-- Compiling architecture Behavioral of lvds_com
+
 } {} {}} E:/acc/firmware/ACC-2xSPF/src/RxTx/encoder_8b10b.v {1 {vlog -work workacc -stats=none E:/acc/firmware/ACC-2xSPF/src/RxTx/encoder_8b10b.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module encoder_8b10b
 
 Top level modules:
 	encoder_8b10b
-
-} {} {}} E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/tx_fifo.vhd {1 {vcom -work workacdc -2002 -explicit -stats=none E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/tx_fifo.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity tx_fifo
--- Compiling architecture SYN of tx_fifo
 
 } {} {}} E:/acc/firmware/ACC-2xSPF/src/RxTx/uart.v {1 {vlog -work workacc -stats=none E:/acc/firmware/ACC-2xSPF/src/RxTx/uart.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -96,6 +110,14 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	uart
+
+} {} {}} E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/tx_fifo.vhd {1 {vcom -work workacdc -2002 -explicit -stats=none E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/tx_fifo.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tx_fifo
+-- Compiling architecture SYN of tx_fifo
 
 } {} {}} E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_ram.vhd {1 {vcom -work workacc -2008 -explicit -stats=none E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_ram.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -114,7 +136,7 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	uart
 
-} {} {}} E:/acc/ACC_ACDC_coms_simulation/acc_acdc_comms_testbench.vhd {1 {vcom -work work -2008 -explicit -stats=none E:/acc/ACC_ACDC_coms_simulation/acc_acdc_comms_testbench.vhd
+} {} {}} E:/acc/ACC_ACDC_coms_simulation/acc_acdc_comms_testbench.vhd {1 {vcom -work work -2008 -explicit -stats=none {E:\acc\ACC_ACDC_coms_simulation\acc_acdc_comms_testbench.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO

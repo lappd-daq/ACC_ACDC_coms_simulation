@@ -87,7 +87,7 @@ R17
 R11
 R12
 vdecoder_8b10b
-Z18 !s110 1544326006
+Z18 !s110 1545357269
 !i10b 1
 !s100 Sk8G7W09a>5SGX:N7khYC0
 I7Y[GfeRCGZ]EdJkSkcC1I3
@@ -101,7 +101,7 @@ Z21 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1544326006.000000
+!s108 1545357269.000000
 !s107 E:/acc/firmware/ACC-2xSPF/src/RxTx/decoder_8b10b.v|
 !s90 -reportprogress|300|-work|workacc|-stats=none|E:/acc/firmware/ACC-2xSPF/src/RxTx/decoder_8b10b.v|
 !i113 1
@@ -122,9 +122,9 @@ V5>6H`5D]Z1jYiIo2mkL671
 !s100 VDE@5]]G`oQBU?4Y265Cz2
 R6
 33
-!s110 1544326007
+Z26 !s110 1545357272
 !i10b 1
-Z26 !s108 1544326007.000000
+Z27 !s108 1545357272.000000
 !s90 -reportprogress|300|-work|workacc|-2008|-explicit|-stats=none|E:/acc/firmware/ACC-2xSPF/src/defs.vhd|
 !s107 E:/acc/firmware/ACC-2xSPF/src/defs.vhd|
 !i113 1
@@ -145,54 +145,54 @@ R21
 r1
 !s85 0
 31
-!s108 1544326005.000000
+!s108 1545357268.000000
 !s107 E:/acc/firmware/ACC-2xSPF/src/RxTx/encoder_8b10b.v|
 !s90 -reportprogress|300|-work|workacc|-stats=none|E:/acc/firmware/ACC-2xSPF/src/RxTx/encoder_8b10b.v|
 !i113 1
 R22
 R23
 Elvds_transceivers
-Z27 w1544333466
+Z28 w1545086470
 R24
 R25
-Z28 DPx4 work 4 defs 0 22 5>6H`5D]Z1jYiIo2mkL671
+Z29 DPx4 work 4 defs 0 22 5>6H`5D]Z1jYiIo2mkL671
 R1
 R2
 R3
-Z29 8E:/acc/firmware/ACC-2xSPF/src/RxTx/lvds_transceivers.vhd
-Z30 FE:/acc/firmware/ACC-2xSPF/src/RxTx/lvds_transceivers.vhd
+Z30 8E:/acc/firmware/ACC-2xSPF/src/RxTx/lvds_transceivers.vhd
+Z31 FE:/acc/firmware/ACC-2xSPF/src/RxTx/lvds_transceivers.vhd
 l0
 L27
 VgUbhjMHM@z@PaJQj4NaDj1
 !s100 [mhoJhm2NlOSF;o^VlC`W2
 R6
 33
-Z31 !s110 1544333490
+Z32 !s110 1545357273
 !i10b 1
-Z32 !s108 1544333490.000000
-Z33 !s90 -reportprogress|300|-work|workacc|-2008|-explicit|-stats=none|E:/acc/firmware/ACC-2xSPF/src/RxTx/lvds_transceivers.vhd|
-Z34 !s107 E:/acc/firmware/ACC-2xSPF/src/RxTx/lvds_transceivers.vhd|
+Z33 !s108 1545357273.000000
+Z34 !s90 -reportprogress|300|-work|workacc|-2008|-explicit|-stats=none|E:/acc/firmware/ACC-2xSPF/src/RxTx/lvds_transceivers.vhd|
+Z35 !s107 E:/acc/firmware/ACC-2xSPF/src/RxTx/lvds_transceivers.vhd|
 !i113 1
 R11
 R12
 Abdf_type
 R24
 R25
-R28
+R29
 R1
 R2
-Z35 DEx4 work 17 lvds_transceivers 0 22 gUbhjMHM@z@PaJQj4NaDj1
+DEx4 work 17 lvds_transceivers 0 22 gUbhjMHM@z@PaJQj4NaDj1
 l184
 L47
-V>D1=OY<AK:G>iT;df?eZ82
-!s100 C7;eDGme0P3DX@ZT>YnNA1
+VfGRZ1MOZ4GRcSXRDSaYKY0
+!s100 b@]zc3Ann2AHJ2Wfb=jMN3
 R6
 33
-R31
-!i10b 1
 R32
+!i10b 1
 R33
 R34
+R35
 !i113 1
 R11
 R12
@@ -210,11 +210,11 @@ VH<O;8i>3eE0G7CZ][HKRG3
 !s100 2fd50>Gd5=HJIK9V``gVd0
 R6
 33
-Z40 !s110 1544326008
+R32
 !i10b 1
-Z41 !s108 1544326008.000000
-Z42 !s90 -reportprogress|300|-work|workacc|-2008|-explicit|-stats=none|E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_data_ram.vhd|
-Z43 !s107 E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_data_ram.vhd|
+R33
+Z40 !s90 -reportprogress|300|-work|workacc|-2008|-explicit|-stats=none|E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_data_ram.vhd|
+Z41 !s107 E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_data_ram.vhd|
 !i113 1
 R11
 R12
@@ -229,34 +229,34 @@ V]6L>_?<QA7BS9cX6[JMXX3
 !s100 CWzeJ=7z7dgmcS_col7gR1
 R6
 33
-R40
+R32
 !i10b 1
+R33
+R40
 R41
-R42
-R43
 !i113 1
 R11
 R12
 Erx_fifo
-Z44 w1543959739
+Z42 w1543959739
 R1
 R2
 R3
-Z45 8E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_fifo.vhd
-Z46 FE:/acc/firmware/ACC-2xSPF/src/RxTx/rx_fifo.vhd
+Z43 8E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_fifo.vhd
+Z44 FE:/acc/firmware/ACC-2xSPF/src/RxTx/rx_fifo.vhd
 l0
 L42
 VbAd@G4VmM@i?QJVK_aK3H1
 !s100 1M7Kc4TYnT:OiFIRk]IHb2
 R6
 32
-Z47 !s110 1544326010
+Z45 !s110 1545357277
 !i10b 1
-Z48 !s108 1544326009.000000
-Z49 !s90 -reportprogress|300|-work|workacc|-2002|-explicit|-stats=none|E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_fifo.vhd|
-Z50 !s107 E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_fifo.vhd|
+Z46 !s108 1545357276.000000
+Z47 !s90 -reportprogress|300|-work|workacc|-2002|-explicit|-stats=none|E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_fifo.vhd|
+Z48 !s107 E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_fifo.vhd|
 !i113 1
-Z51 o-work workacc -2002 -explicit
+Z49 o-work workacc -2002 -explicit
 R12
 Asyn
 R1
@@ -268,30 +268,30 @@ Vn;iJf<oKMfSPbAdnoJIRd3
 !s100 D;`X3l9gh>@V72e0le?I?1
 R6
 32
-R47
+R45
 !i10b 1
+R46
+R47
 R48
-R49
-R50
 !i113 1
-R51
+R49
 R12
 Erx_ram
-Z52 w1525895142
+Z50 w1525895142
 R1
 R2
 R3
-Z53 8E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_ram.vhd
-Z54 FE:/acc/firmware/ACC-2xSPF/src/RxTx/rx_ram.vhd
+Z51 8E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_ram.vhd
+Z52 FE:/acc/firmware/ACC-2xSPF/src/RxTx/rx_ram.vhd
 l0
 L24
 VD`R@7=1^21d6Y:@dzG7Kj2
 !s100 S3IgVd2ZgYaZXj:zilM=N0
 R6
 33
-R40
+Z53 !s110 1545357274
 !i10b 1
-R41
+Z54 !s108 1545357274.000000
 Z55 !s90 -reportprogress|300|-work|workacc|-2008|-explicit|-stats=none|E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_ram.vhd|
 Z56 !s107 E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_ram.vhd|
 !i113 1
@@ -307,9 +307,9 @@ VPRU928U5B15X;S6NXeb3c0
 !s100 ClQSQI_?G;322h9MNlmU32
 R6
 33
-R40
+R53
 !i10b 1
-R41
+R54
 R55
 R56
 !i113 1
@@ -317,7 +317,7 @@ R11
 R12
 Etransceivers
 Z57 w1544325984
-R28
+R29
 R25
 R24
 R1
@@ -331,16 +331,16 @@ V_W4a3MYZ1Jf:9TF[iaihY1
 !s100 Eba0i:Ue;6>2PK`[B3d<K3
 R6
 33
-R40
-!i10b 1
 R26
+!i10b 1
+R27
 Z60 !s90 -reportprogress|300|-work|workacc|-2008|-explicit|-stats=none|E:/acc/firmware/ACC-2xSPF/src/RxTx/transceivers.vhd|
 Z61 !s107 E:/acc/firmware/ACC-2xSPF/src/RxTx/transceivers.vhd|
 !i113 1
 R11
 R12
 Artl
-R28
+R29
 R25
 R24
 R1
@@ -352,9 +352,9 @@ VEl=0GFcMn8`YzEmNc:la02
 !s100 :WAoSe`O=AW4d8[lz8nMQ1
 R6
 33
-R40
-!i10b 1
 R26
+!i10b 1
+R27
 R60
 R61
 !i113 1
@@ -373,92 +373,92 @@ VHHh@:L48Za]=9i0BBjm0^3
 !s100 fI0ziF3_7>dOzc]>0P<n^0
 R6
 32
-R47
+R45
 !i10b 1
-Z65 !s108 1544326010.000000
+Z65 !s108 1545357277.000000
 Z66 !s90 -reportprogress|300|-work|workacc|-2002|-explicit|-stats=none|E:/acc/firmware/ACC-2xSPF/src/RxTx/tx_fifo.vhd|
 Z67 !s107 E:/acc/firmware/ACC-2xSPF/src/RxTx/tx_fifo.vhd|
 !i113 1
-R51
+R49
 R12
 Asyn
 R1
 R2
-DEx4 work 7 tx_fifo 0 22 HHh@:L48Za]=9i0BBjm0^3
+Z68 DEx4 work 7 tx_fifo 0 22 HHh@:L48Za]=9i0BBjm0^3
 l95
 L58
-Vl`Gd3R:Ym>c94=>Ln3QBa0
-!s100 H39<S=6d4d^J]J1ObMlVz3
+Z69 Vl`Gd3R:Ym>c94=>Ln3QBa0
+Z70 !s100 H39<S=6d4d^J]J1ObMlVz3
 R6
 32
-R47
+R45
 !i10b 1
 R65
 R66
 R67
 !i113 1
-R51
+R49
 R12
 vuart
-Z68 !s110 1544326009
+Z71 !s110 1545357276
 !i10b 1
 !s100 <O[;FWM8iB03Y<aTJY8H30
 I]W9KmfH734c;fg<iF]cEk3
 R19
 R3
-Z69 w1544115156
-Z70 8E:/acc/firmware/ACC-2xSPF/src/RxTx/uart.v
-Z71 FE:/acc/firmware/ACC-2xSPF/src/RxTx/uart.v
+Z72 w1544115156
+Z73 8E:/acc/firmware/ACC-2xSPF/src/RxTx/uart.v
+Z74 FE:/acc/firmware/ACC-2xSPF/src/RxTx/uart.v
 L0 192
 R21
 r1
 !s85 0
 31
-R48
-Z72 !s107 E:/acc/firmware/ACC-2xSPF/src/RxTx/uart.v|
-Z73 !s90 -reportprogress|300|-work|workacc|-stats=none|E:/acc/firmware/ACC-2xSPF/src/RxTx/uart.v|
+R46
+Z75 !s107 E:/acc/firmware/ACC-2xSPF/src/RxTx/uart.v|
+Z76 !s90 -reportprogress|300|-work|workacc|-stats=none|E:/acc/firmware/ACC-2xSPF/src/RxTx/uart.v|
 !i113 1
 R22
 R23
 vuart_rx
-R68
+R71
 !i10b 1
 !s100 1nQokO7Q;1dPOnHn65fbn1
 IhZFfE4eUhRLU0>lS>l52n0
 R19
 R3
-R69
-R70
-R71
+R72
+R73
+R74
 L0 91
 R21
 r1
 !s85 0
 31
-R48
-R72
-R73
+R46
+R75
+R76
 !i113 1
 R22
 R23
 vuart_tx
-R68
+R71
 !i10b 1
 !s100 DYn3GncDTm:^mO<55EhcH1
 IS7ciNh5B:e9_z3z>[Y75Z1
 R19
 R3
-R69
-R70
-R71
+R72
+R73
+R74
 R20
 R21
 r1
 !s85 0
 31
-R48
-R72
-R73
+R46
+R75
+R76
 !i113 1
 R22
 R23

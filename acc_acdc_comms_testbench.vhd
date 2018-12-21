@@ -144,11 +144,9 @@ end COMPONENT;
 begin
   Stop <= FALSE;
   -- ACC side
-  xInstruction <= (others => '0');
-  xInstruct_Rdy <= '0';
   xtrig <= '0';
   xdone <= '1';
-  xfe_mask <= '0';
+  xfe_mask <= '1';  -- we're sending commands to this port
   clock_FPGA_PLLlock <= '1';
   xready <= '1';
   
@@ -192,6 +190,19 @@ begin
       clocks_rx <= '1';
       wait for 20 NS;
     end loop;
+    wait;
+  end process;
+
+  instruct_gen: process -- send a few instructions
+  begin
+    xInstruction <= (others => '0');
+    xInstruct_Rdy <= '0';
+    wait for 5000 NS;
+    xInstruction <= X"FAB4FAB4";
+    xInstruct_Rdy <= '1';
+    wait for 250 ns;
+    xInstruction <= X"00000000";
+    xInstruct_Rdy <= '0';
     wait;
   end process;
   
