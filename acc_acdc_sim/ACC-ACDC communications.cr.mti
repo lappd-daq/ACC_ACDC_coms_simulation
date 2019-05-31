@@ -84,6 +84,23 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	decoder_8b10b
 
+} {} {}} E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/tx_fifo.vhd {1 {vcom -work workacdc -2002 -explicit -stats=none E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/tx_fifo.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tx_fifo
+-- Compiling architecture SYN of tx_fifo
+
+} {} {}} E:/acc/firmware/ACC-2xSPF/src/RxTx/uart.v {1 {vlog -work workacc -stats=none E:/acc/firmware/ACC-2xSPF/src/RxTx/uart.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module uart_tx
+-- Compiling module uart_rx
+-- Compiling module uart
+
+Top level modules:
+	uart
+
 } {} {}} E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_com.vhd {1 {vcom -work workacdc -2002 -explicit -stats=none E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/lvds_com.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -102,7 +119,7 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	encoder_8b10b
 
-} {} {}} E:/acc/firmware/ACC-2xSPF/src/RxTx/uart.v {1 {vlog -work workacc -stats=none E:/acc/firmware/ACC-2xSPF/src/RxTx/uart.v
+} {} {}} E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/uart.v {1 {vlog -work workacdc -stats=none E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/uart.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module uart_tx
 -- Compiling module uart_rx
@@ -110,14 +127,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	uart
-
-} {} {}} E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/tx_fifo.vhd {1 {vcom -work workacdc -2002 -explicit -stats=none E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/tx_fifo.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity tx_fifo
--- Compiling architecture SYN of tx_fifo
 
 } {} {}} E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_ram.vhd {1 {vcom -work workacc -2008 -explicit -stats=none E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_ram.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -127,14 +136,13 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity rx_ram
 -- Compiling architecture bdf_type of rx_ram
 
-} {} {}} E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/uart.v {1 {vlog -work workacdc -stats=none E:/psec4/acdc/firmware/ACDC-firmware/source/RXTX/uart.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module uart_tx
--- Compiling module uart_rx
--- Compiling module uart
-
-Top level modules:
-	uart
+} {} {}} E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_fifo.vhd {1 {vcom -work workacc -2002 -explicit -stats=none E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_fifo.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity rx_fifo
+-- Compiling architecture SYN of rx_fifo
 
 } {} {}} E:/acc/ACC_ACDC_coms_simulation/acc_acdc_comms_testbench.vhd {1 {vcom -work work -2008 -explicit -stats=none {E:\acc\ACC_ACDC_coms_simulation\acc_acdc_comms_testbench.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -147,13 +155,5 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package Definition_Pool
 -- Compiling entity testbench
 -- Compiling architecture BENCH of testbench
-
-} {} {}} E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_fifo.vhd {1 {vcom -work workacc -2002 -explicit -stats=none E:/acc/firmware/ACC-2xSPF/src/RxTx/rx_fifo.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity rx_fifo
--- Compiling architecture SYN of rx_fifo
 
 } {} {}}
